@@ -149,7 +149,7 @@
       "desc": "Cliente OpenVPN para Knulli con lista de servidores Proton, banderas reales, deteccion de ",
       "desc_long": "Cliente OpenVPN para Knulli con lista de servidores Proton, banderas reales, deteccion de IP publica y persistencia tras cerrar la app. Soporta credenciales OpenVPN/IKEv2 desde teclado en pantalla, RGB Joystick con tema A.VPN, idioma es/en/fr y descargas en background.",
       "version": "1.0",
-      "size_mb": 0.25,
+      "size_mb": 0.53,
       "genre": "Network",
       "launcher": "Vpn.sh",
       "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/vpn.zip",
