@@ -245,21 +245,21 @@
     },
     {
       "id": "appstore",
-      "name": "appstore",
-      "desc": "",
-      "desc_long": "",
+      "name": "Tienda Knulli",
+      "desc": "Catalogo e instalador de las apps del paquete PORTABLE KNULLI APPS. Descarga e instala app",
+      "desc_long": "Catalogo e instalador de las apps del paquete PORTABLE KNULLI APPS. Descarga e instala apps desde GitHub, las actualiza y desinstala. Necesita internet. Controles: B instalar, X desinstalar, Y info, START refrescar, A salir.",
       "version": "1.0",
-      "size_mb": 0.01,
+      "size_mb": 0.03,
       "genre": "Utility",
       "launcher": "Tienda.sh",
       "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/appstore.zip",
       "icon": "https://raw.githubusercontent.com/raspar44/knulli-app-store/main/icons/appstore.png",
       "gamelist": {
         "path": "./Tienda.sh",
-        "name": "appstore",
-        "desc": "",
-        "image": "",
-        "marquee": "",
+        "name": "Tienda Knulli",
+        "desc": "Catalogo e instalador de las apps del paquete PORTABLE KNULLI APPS. Descarga e instala apps desde GitHub, las actualiza y desinstala. Necesita internet. Controles: B instalar, X desinstalar, Y info, START refrescar, A salir.",
+        "image": "./images/appstore-image.png",
+        "marquee": "./images/appstore-logo.png",
         "genre": "Utility"
       }
     }
