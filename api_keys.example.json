@@ -1,0 +1,14 @@
+{
+  "_comment": "Rellena con tus propias claves. Renombra a api_keys.json.",
+  "acoustid": "",
+  "audd": "",
+  "finnhub": "",
+  "twelvedata": "",
+  "coinmarketcap": "",
+  "alphavantage": "",
+  "fmp": "",
+  "polygon": "",
+  "marketstack": "",
+  "tiingo": "",
+  "eodhd": ""
+}

@@ -1,0 +1,7 @@
+# Los zips de las apps se suben como assets del Release, no a git
+release_assets/
+*.part
+
+# Python
+__pycache__/
+*.pyc

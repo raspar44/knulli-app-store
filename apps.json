@@ -1,0 +1,267 @@
+{
+  "store_version": "1.0",
+  "release_tag": "apps-v1",
+  "updated": "2026-05-28",
+  "apps": [
+    {
+      "id": "radio",
+      "name": "Radio Internet",
+      "desc": "Escucha emisoras de radio por streaming con visualizador de espectro en tiempo real. Anade",
+      "desc_long": "Escucha emisoras de radio por streaming con visualizador de espectro en tiempo real. Anade emisoras por URL, ordenalas a tu gusto, ponle retraso al sonido para sincronizarlo con la TV y apaga la pantalla con SELECT para ahorrar bateria. Logos de las emisoras automaticos.",
+      "version": "1.0",
+      "size_mb": 1.45,
+      "genre": "Multimedia",
+      "launcher": "Radio.sh",
+      "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/radio.zip",
+      "icon": "https://raw.githubusercontent.com/raspar44/knulli-app-store/main/icons/radio.png",
+      "gamelist": {
+        "path": "./Radio.sh",
+        "name": "Radio Internet",
+        "desc": "Escucha emisoras de radio por streaming con visualizador de espectro en tiempo real. Anade emisoras por URL, ordenalas a tu gusto, ponle retraso al sonido para sincronizarlo con la TV y apaga la pantalla con SELECT para ahorrar bateria. Logos de las emisoras automaticos.",
+        "image": "./images/radio-image.png",
+        "marquee": "./images/radio-logo.png",
+        "genre": "Multimedia"
+      }
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "desc": "Busca videos en YouTube con teclado virtual, velos en streaming (360p) o descargalos en ca",
+      "desc_long": "Busca videos en YouTube con teclado virtual, velos en streaming (360p) o descargalos en calidad (hasta 720p) para verlos luego. Favoritos de canales, historial, miniaturas de las descargas y control completo del video con el mando.",
+      "version": "1.0",
+      "size_mb": 3.01,
+      "genre": "Multimedia",
+      "launcher": "YouTube.sh",
+      "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/youtube.zip",
+      "icon": "https://raw.githubusercontent.com/raspar44/knulli-app-store/main/icons/youtube.png",
+      "gamelist": {
+        "path": "./YouTube.sh",
+        "name": "YouTube",
+        "desc": "Busca videos en YouTube con teclado virtual, velos en streaming (360p) o descargalos en calidad (hasta 720p) para verlos luego. Favoritos de canales, historial, miniaturas de las descargas y control completo del video con el mando.",
+        "image": "./images/youtube-image.png",
+        "marquee": "./images/youtube-logo.png",
+        "genre": "Multimedia"
+      }
+    },
+    {
+      "id": "ivoox",
+      "name": "iVoox",
+      "desc": "Reproductor de podcasts de iVoox. Busca podcasts por palabra clave, guarda favoritos, escu",
+      "desc_long": "Reproductor de podcasts de iVoox. Busca podcasts por palabra clave, guarda favoritos, escucha episodios en streaming con mpv y descarga MP3 offline a /userdata/Download/Podcasts. Soporta login con tu cuenta iVoox para ver tus suscripciones. RSS publico para episodios, sin necesidad de API.",
+      "version": "1.0",
+      "size_mb": 0.07,
+      "genre": "Multimedia",
+      "launcher": "iVoox.sh",
+      "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/ivoox.zip",
+      "icon": "https://raw.githubusercontent.com/raspar44/knulli-app-store/main/icons/ivoox.png",
+      "gamelist": {
+        "path": "./iVoox.sh",
+        "name": "iVoox",
+        "desc": "Reproductor de podcasts de iVoox. Busca podcasts por palabra clave, guarda favoritos, escucha episodios en streaming con mpv y descarga MP3 offline a /userdata/Download/Podcasts. Soporta login con tu cuenta iVoox para ver tus suscripciones. RSS publico para episodios, sin necesidad de API.",
+        "image": "./images/ivoox-image.png",
+        "marquee": "./images/ivoox-logo.png",
+        "genre": "Multimedia"
+      }
+    },
+    {
+      "id": "allplay",
+      "name": "ALLPlay",
+      "desc": "Reproductor de video, audio y PDF. Recorre la carpeta raiz que configures en Ajustes y mue",
+      "desc_long": "Reproductor de video, audio y PDF. Recorre la carpeta raiz que configures en Ajustes y muestra peliculas (mp4/mkv/avi/webm/...), musica (mp3/flac/ogg/...) y documentos PDF en una sola lista. Video a pantalla completa con mpv, audio con pantalla \"Ahora suena\" y PDF pagina a pagina con paginacion rapida (L1/R1 saltan 10 paginas).",
+      "version": "1.0",
+      "size_mb": 0.13,
+      "genre": "Multimedia",
+      "launcher": "AllPlay.sh",
+      "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/allplay.zip",
+      "icon": "https://raw.githubusercontent.com/raspar44/knulli-app-store/main/icons/allplay.png",
+      "gamelist": {
+        "path": "./AllPlay.sh",
+        "name": "ALLPlay",
+        "desc": "Reproductor de video, audio y PDF. Recorre la carpeta raiz que configures en Ajustes y muestra peliculas (mp4/mkv/avi/webm/...), musica (mp3/flac/ogg/...) y documentos PDF en una sola lista. Video a pantalla completa con mpv, audio con pantalla \"Ahora suena\" y PDF pagina a pagina con paginacion rapida (L1/R1 saltan 10 paginas).",
+        "image": "./images/allplay-image.png",
+        "marquee": "./images/allplay-logo.png",
+        "genre": "Multimedia"
+      }
+    },
+    {
+      "id": "ticker",
+      "name": "Ticker",
+      "desc": "Cotizaciones en tiempo real de criptos, acciones, indices, divisas, oro y ETFs. Logo + nom",
+      "desc_long": "Cotizaciones en tiempo real de criptos, acciones, indices, divisas, oro y ETFs. Logo + nombre + precio + reloj en vivo. Start: cambiar activo / divisa / intervalo de refresco. Lista de activos reordenable (L1/R1 mover, X borrar). Detecta automaticamente el tipo de ticker via CoinGecko (crypto) y Stooq (acciones/forex/indices), con busqueda inteligente: teclea BTC, AAPL, ^GSPC, EURUSD=X, RSR... y resuelve.",
+      "version": "1.0",
+      "size_mb": 0.26,
+      "genre": "Utility",
+      "launcher": "Ticker.sh",
+      "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/ticker.zip",
+      "icon": "https://raw.githubusercontent.com/raspar44/knulli-app-store/main/icons/ticker.png",
+      "gamelist": {
+        "path": "./Ticker.sh",
+        "name": "Ticker",
+        "desc": "Cotizaciones en tiempo real de criptos, acciones, indices, divisas, oro y ETFs. Logo + nombre + precio + reloj en vivo. Start: cambiar activo / divisa / intervalo de refresco. Lista de activos reordenable (L1/R1 mover, X borrar). Detecta automaticamente el tipo de ticker via CoinGecko (crypto) y Stooq (acciones/forex/indices), con busqueda inteligente: teclea BTC, AAPL, ^GSPC, EURUSD=X, RSR... y resuelve.",
+        "image": "./images/ticker-image.png",
+        "marquee": "./images/ticker-logo.png",
+        "genre": "Utility"
+      }
+    },
+    {
+      "id": "reloj",
+      "name": "Reloj",
+      "desc": "Reloj y despertador en pantalla completa. Hora HH:MM en numeros gigantes, dia de la semana",
+      "desc_long": "Reloj y despertador en pantalla completa. Hora HH:MM en numeros gigantes, dia de la semana y fecha en letras grandes. Start: opciones (crear / editar alarmas con dias personalizables L M X J V S D, tono MP3 local o emisora de radio internet, snooze configurable). Varias alarmas simultaneas. Reutiliza la lista de emisoras de la app Radio si esta instalada.",
+      "version": "1.0",
+      "size_mb": 0.08,
+      "genre": "Utility",
+      "launcher": "Reloj.sh",
+      "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/reloj.zip",
+      "icon": "https://raw.githubusercontent.com/raspar44/knulli-app-store/main/icons/reloj.png",
+      "gamelist": {
+        "path": "./Reloj.sh",
+        "name": "Reloj",
+        "desc": "Reloj y despertador en pantalla completa. Hora HH:MM en numeros gigantes, dia de la semana y fecha en letras grandes. Start: opciones (crear / editar alarmas con dias personalizables L M X J V S D, tono MP3 local o emisora de radio internet, snooze configurable). Varias alarmas simultaneas. Reutiliza la lista de emisoras de la app Radio si esta instalada.",
+        "image": "./images/reloj-image.png",
+        "marquee": "./images/reloj-logo.png",
+        "genre": "Utility"
+      }
+    },
+    {
+      "id": "torrent",
+      "name": "Torrent",
+      "desc": "Cliente BitTorrent con buscador integrado. Busca torrents por nombre, ordena por seeders y",
+      "desc_long": "Cliente BitTorrent con buscador integrado. Busca torrents por nombre, ordena por seeders y descarga con un boton. Acepta tambien enlaces magnet pegados a mano y archivos .torrent dejados en /userdata/Download/Torrents/_add/. Pantalla de descargas con progreso, velocidad y pausa/reanudar. El motor es aria2c, que se instala solo en el primer arranque (necesita internet). Las descargas van a /userdata/Download/Torrents/.",
+      "version": "1.0",
+      "size_mb": 5.6,
+      "genre": "Utility",
+      "launcher": "Torrent.sh",
+      "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/torrent.zip",
+      "icon": "https://raw.githubusercontent.com/raspar44/knulli-app-store/main/icons/torrent.png",
+      "gamelist": {
+        "path": "./Torrent.sh",
+        "name": "Torrent",
+        "desc": "Cliente BitTorrent con buscador integrado. Busca torrents por nombre, ordena por seeders y descarga con un boton. Acepta tambien enlaces magnet pegados a mano y archivos .torrent dejados en /userdata/Download/Torrents/_add/. Pantalla de descargas con progreso, velocidad y pausa/reanudar. El motor es aria2c, que se instala solo en el primer arranque (necesita internet). Las descargas van a /userdata/Download/Torrents/.",
+        "image": "./images/torrent-image.png",
+        "marquee": "./images/torrent-logo.png",
+        "genre": "Utility"
+      }
+    },
+    {
+      "id": "vpn",
+      "name": "PROTONVPN",
+      "desc": "Cliente OpenVPN para Knulli con lista de servidores Proton, banderas reales, deteccion de ",
+      "desc_long": "Cliente OpenVPN para Knulli con lista de servidores Proton, banderas reales, deteccion de IP publica y persistencia tras cerrar la app. Soporta credenciales OpenVPN/IKEv2 desde teclado en pantalla, RGB Joystick con tema A.VPN, idioma es/en/fr y descargas en background.",
+      "version": "1.0",
+      "size_mb": 0.25,
+      "genre": "Network",
+      "launcher": "Vpn.sh",
+      "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/vpn.zip",
+      "icon": "https://raw.githubusercontent.com/raspar44/knulli-app-store/main/icons/vpn.png",
+      "gamelist": {
+        "path": "./Vpn.sh",
+        "name": "PROTONVPN",
+        "desc": "Cliente OpenVPN para Knulli con lista de servidores Proton, banderas reales, deteccion de IP publica y persistencia tras cerrar la app. Soporta credenciales OpenVPN/IKEv2 desde teclado en pantalla, RGB Joystick con tema A.VPN, idioma es/en/fr y descargas en background.",
+        "image": "./images/ProtonVpn-image.png",
+        "marquee": "./images/ProtonVpn-logo.png",
+        "genre": "Network"
+      }
+    },
+    {
+      "id": "rgb-settings",
+      "name": "RGB Settings",
+      "desc": "A tool for setting up the RGB LEDs of your handheld device.",
+      "desc_long": "A tool for setting up the RGB LEDs of your handheld device.",
+      "version": "1.0",
+      "size_mb": 0.06,
+      "genre": "Utility",
+      "launcher": "RGB Settings.sh",
+      "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/rgb-settings.zip",
+      "icon": "https://raw.githubusercontent.com/raspar44/knulli-app-store/main/icons/rgb-settings.png",
+      "gamelist": {
+        "path": "./RGB Settings.sh",
+        "name": "RGB Settings",
+        "desc": "A tool for setting up the RGB LEDs of your handheld device.",
+        "image": "./images/rgb-settings-image.png",
+        "marquee": "./images/rgb-settings-logo.png",
+        "genre": "Utility"
+      }
+    },
+    {
+      "id": "pantalla",
+      "name": "Pantalla",
+      "desc": "Diagnostico del LCD: pixeles muertos (pantallas planas en blanco y negro), barras de color",
+      "desc_long": "Diagnostico del LCD: pixeles muertos (pantallas planas en blanco y negro), barras de color, lavado de pantalla a frecuencia variable, gradientes de luminancia para detectar banding, prueba de hercios (10/20/30/40/60/90/120 FPS) con barras en movimiento y patrones geometricos. Util para des-glichear la pantalla, comprobar uniformidad y forzar pixeles atascados.",
+      "version": "1.0",
+      "size_mb": 0.03,
+      "genre": "Utility",
+      "launcher": "Pantalla.sh",
+      "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/pantalla.zip",
+      "icon": "https://raw.githubusercontent.com/raspar44/knulli-app-store/main/icons/pantalla.png",
+      "gamelist": {
+        "path": "./Pantalla.sh",
+        "name": "Pantalla",
+        "desc": "Diagnostico del LCD: pixeles muertos (pantallas planas en blanco y negro), barras de color, lavado de pantalla a frecuencia variable, gradientes de luminancia para detectar banding, prueba de hercios (10/20/30/40/60/90/120 FPS) con barras en movimiento y patrones geometricos. Util para des-glichear la pantalla, comprobar uniformidad y forzar pixeles atascados.",
+        "image": "./images/pantalla-image.png",
+        "marquee": "./images/pantalla-logo.png",
+        "genre": "Utility"
+      }
+    },
+    {
+      "id": "discoduro",
+      "name": "Disco Duro",
+      "desc": "Gestor visual de almacenamiento. Muestra cada microSD y USB OTG conectados con barras de u",
+      "desc_long": "Gestor visual de almacenamiento. Muestra cada microSD y USB OTG conectados con barras de uso (verde, amarillo, rojo segun ocupacion) y permite formatear las unidades secundarias (no la principal del sistema) en exFAT, FAT32, NTFS o ext4. La microSD principal aparece marcada como SISTEMA y no se puede formatear.",
+      "version": "1.0",
+      "size_mb": 0.05,
+      "genre": "Utility",
+      "launcher": "DiscoDuro.sh",
+      "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/discoduro.zip",
+      "icon": "https://raw.githubusercontent.com/raspar44/knulli-app-store/main/icons/discoduro.png",
+      "gamelist": {
+        "path": "./DiscoDuro.sh",
+        "name": "Disco Duro",
+        "desc": "Gestor visual de almacenamiento. Muestra cada microSD y USB OTG conectados con barras de uso (verde, amarillo, rojo segun ocupacion) y permite formatear las unidades secundarias (no la principal del sistema) en exFAT, FAT32, NTFS o ext4. La microSD principal aparece marcada como SISTEMA y no se puede formatear.",
+        "image": "./images/disco-duro-image.png",
+        "marquee": "./images/disco-duro-logo.png",
+        "genre": "Utility"
+      }
+    },
+    {
+      "id": "ramfaster",
+      "name": "RAMfaster",
+      "desc": "Acelera la consola liberando memoria. Sincroniza el filesystem, tira las caches del kernel",
+      "desc_long": "Acelera la consola liberando memoria. Sincroniza el filesystem, tira las caches del kernel (drop_caches), y opcionalmente mata procesos huerfanos que se hayan quedado colgados de sesiones anteriores (mpv, yt-dlp, fpcalc, las apps python de radio/youtube/ticker/allplay/reloj). Muestra antes/despues con cuanta RAM se ha liberado. Util tras varias horas de uso intensivo.",
+      "version": "1.0",
+      "size_mb": 0.03,
+      "genre": "Utility",
+      "launcher": "RAMfaster.sh",
+      "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/ramfaster.zip",
+      "icon": "https://raw.githubusercontent.com/raspar44/knulli-app-store/main/icons/ramfaster.png",
+      "gamelist": {
+        "path": "./RAMfaster.sh",
+        "name": "RAMfaster",
+        "desc": "Acelera la consola liberando memoria. Sincroniza el filesystem, tira las caches del kernel (drop_caches), y opcionalmente mata procesos huerfanos que se hayan quedado colgados de sesiones anteriores (mpv, yt-dlp, fpcalc, las apps python de radio/youtube/ticker/allplay/reloj). Muestra antes/despues con cuanta RAM se ha liberado. Util tras varias horas de uso intensivo.",
+        "image": "./images/ramfaster-image.png",
+        "marquee": "./images/ramfaster-logo.png",
+        "genre": "Utility"
+      }
+    },
+    {
+      "id": "appstore",
+      "name": "appstore",
+      "desc": "",
+      "desc_long": "",
+      "version": "1.0",
+      "size_mb": 0.01,
+      "genre": "Utility",
+      "launcher": "Tienda.sh",
+      "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/appstore.zip",
+      "icon": "https://raw.githubusercontent.com/raspar44/knulli-app-store/main/icons/appstore.png",
+      "gamelist": {
+        "path": "./Tienda.sh",
+        "name": "appstore",
+        "desc": "",
+        "image": "",
+        "marquee": "",
+        "genre": "Utility"
+      }
+    }
+  ]
+}
