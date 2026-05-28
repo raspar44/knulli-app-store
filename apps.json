@@ -109,7 +109,7 @@
       "desc": "Reloj y despertador en pantalla completa. Hora HH:MM en numeros gigantes, dia de la semana",
       "desc_long": "Reloj y despertador en pantalla completa. Hora HH:MM en numeros gigantes, dia de la semana y fecha en letras grandes. Start: opciones (crear / editar alarmas con dias personalizables L M X J V S D, tono MP3 local o emisora de radio internet, snooze configurable). Varias alarmas simultaneas. Reutiliza la lista de emisoras de la app Radio si esta instalada.",
       "version": "1.0",
-      "size_mb": 0.08,
+      "size_mb": 0.09,
       "genre": "Utility",
       "launcher": "Reloj.sh",
       "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/reloj.zip",
