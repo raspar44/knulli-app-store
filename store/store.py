@@ -393,6 +393,8 @@ class Store:
         self.detail_app = None      # app cuyo desc completo se muestra
         self.pressed = set()
         self._thumb_cache = {}      # id -> Surface | None
+        self.btn_log = []           # test de botones (SELECT)
+        self._btn_start_hold = 0.0
         # Cargar catalogo en background
         threading.Thread(target=self._load_manifest, daemon=True).start()
 
@@ -490,9 +492,42 @@ class Store:
                 2.5)
         threading.Thread(target=worker, daemon=True).start()
 
+    def _btn_log(self, msg):
+        self.btn_log.append(msg)
+        if len(self.btn_log) > 40:
+            self.btn_log = self.btn_log[-40:]
+        dbg("BTNTEST " + msg)
+
     # ----- input -----
     def handle_events(self):
         for ev in pygame.event.get():
+            # Modo test de botones: captura TODO evento crudo y lo muestra.
+            # Util cuando algun boton "no responde" para ver su codigo real.
+            if self.state == "buttons":
+                if ev.type == pygame.JOYBUTTONDOWN:
+                    self._btn_log(f"JOYBUTTONDOWN  button={ev.button}")
+                elif ev.type == pygame.JOYBUTTONUP:
+                    self._btn_log(f"JOYBUTTONUP    button={ev.button}")
+                elif ev.type == pygame.JOYHATMOTION:
+                    self._btn_log(f"JOYHATMOTION   value={ev.value}")
+                elif ev.type == pygame.JOYAXISMOTION:
+                    if abs(ev.value) > 0.5:
+                        self._btn_log(
+                            f"JOYAXISMOTION  axis={ev.axis} val={ev.value:+.2f}")
+                elif ev.type == pygame.KEYDOWN:
+                    self._btn_log(
+                        f"KEYDOWN        key={ev.key} ({pygame.key.name(ev.key)})")
+                # Salir del test: mantener START 2s, o Esc en PC
+                if ev.type == pygame.JOYBUTTONDOWN and ev.button in BTN_START:
+                    self._btn_start_hold = time.time()
+                if ev.type == pygame.JOYBUTTONUP and ev.button in BTN_START:
+                    held = time.time() - getattr(self, "_btn_start_hold", 0.0)
+                    if held >= 2.0:
+                        self.state = "list"
+                        self._btn_start_hold = 0.0
+                if ev.type == pygame.KEYDOWN and ev.key == pygame.K_ESCAPE:
+                    self.state = "list"
+                continue
             if ev.type == pygame.QUIT:
                 self.running = False
             elif ev.type == pygame.JOYBUTTONDOWN:
@@ -522,6 +557,8 @@ class Store:
                     self._action("x")
                 elif ev.key == pygame.K_y:
                     self._action("y")
+                elif ev.key == pygame.K_s:
+                    self._action("select")
                 elif ev.key == pygame.K_F5:
                     self._action("start")
 
@@ -536,6 +573,8 @@ class Store:
             self._action("y")
         elif b in BTN_START:
             self._action("start")
+        elif b in BTN_SELECT:
+            self._action("select")
 
     def _nav(self, delta):
         if self.busy or self.state != "list" or not self.apps:
@@ -564,7 +603,11 @@ class Store:
                 self.state = "list"
             return
         # estado list
-        if a == "back":
+        if a == "select":
+            self.btn_log = []
+            self._btn_start_hold = 0.0
+            self.state = "buttons"
+        elif a == "back":
             self.exit_yes = False
             self.state = "exit_confirm"
         elif a == "start":
@@ -596,6 +639,8 @@ class Store:
         self.screen.fill(V_BG)
         if self.state == "splash":
             self._draw_splash()
+        elif self.state == "buttons":
+            self._draw_buttons()
         elif self.state == "detail":
             self._draw_list()
             self._draw_detail()
@@ -608,6 +653,28 @@ class Store:
             self._draw_busy()
         self._draw_toast()
         pygame.display.flip()
+
+    def _draw_buttons(self):
+        self._header("TEST DE BOTONES")
+        s = self.f_small.render(
+            "Pulsa cualquier boton. Veras su codigo real aqui.",
+            True, V_TEXT_DIM)
+        self.screen.blit(s, (16, 60))
+        ref = self.f_tiny.render(
+            "Esperado RG40XX-H: B=4 A=3 X=6 Y=5 L1=7 R1=8 "
+            "SELECT=9 START=10 MENU=11", True, V_CYAN)
+        self.screen.blit(ref, (16, 86))
+        # ultimas pulsaciones
+        y = 116
+        for line in self.btn_log[-14:]:
+            ls = self.f_item.render(line, True, V_TEXT)
+            self.screen.blit(ls, (20, y))
+            y += 24
+        if not self.btn_log:
+            ws = self.f_item.render("(esperando pulsaciones...)", True,
+                                    V_TEXT_DIM)
+            self.screen.blit(ws, (20, 120))
+        self._footer("Manten START 2s para salir  (Esc en PC)")
 
     def _header(self, title, subtitle=""):
         pygame.draw.rect(self.screen, V_CARD, (0, 0, SCREEN_W, 50))
@@ -717,7 +784,8 @@ class Store:
                              (SCREEN_W - 6, y_top, 3, y_bot - y_top))
             pygame.draw.rect(self.screen, V_ACCENT,
                              (SCREEN_W - 6, bar_y, 3, bar_h))
-        self._footer("B instalar  X desinstalar  Y info  START refrescar  A salir")
+        self._footer("B instalar  X desinstalar  Y info  START refrescar  "
+                     "SELECT test botones  A salir")
 
     def _draw_detail(self):
         app = self.detail_app or {}
