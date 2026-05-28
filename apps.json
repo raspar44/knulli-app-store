@@ -262,6 +262,26 @@
         "marquee": "./images/appstore-logo.png",
         "genre": "Utility"
       }
+    },
+    {
+      "id": "portal",
+      "name": "PORTAL RAP",
+      "desc": "Autentica la consola contra el portal cautivo WiFi del trabajo (Aruba ClearPass Guest en l",
+      "desc_long": "Autentica la consola contra el portal cautivo WiFi del trabajo (Aruba ClearPass Guest en la red RAP, MDE). Captura email y contrasena con teclado en pantalla, persiste credenciales en /userdata/system/portal/auth.txt, detecta el portal con generate_204, hace el POST de login y verifica conectividad. Soporta auto-conexion al abrir la app e idioma es/en/fr.",
+      "version": "1.0",
+      "size_mb": 0.06,
+      "genre": "Utility",
+      "launcher": "Portal.sh",
+      "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/portal.zip",
+      "icon": "https://raw.githubusercontent.com/raspar44/knulli-app-store/main/icons/portal.png",
+      "gamelist": {
+        "path": "./Portal.sh",
+        "name": "PORTAL RAP",
+        "desc": "Autentica la consola contra el portal cautivo WiFi del trabajo (Aruba ClearPass Guest en la red RAP, MDE). Captura email y contrasena con teclado en pantalla, persiste credenciales en /userdata/system/portal/auth.txt, detecta el portal con generate_204, hace el POST de login y verifica conectividad. Soporta auto-conexion al abrir la app e idioma es/en/fr.",
+        "image": "./images/PortalRAP-image.png",
+        "marquee": "./images/PortalRAP-logo.png",
+        "genre": "Utility"
+      }
     }
   ]
 }
