@@ -539,16 +539,24 @@ class Store:
             elif ev.type == pygame.JOYBUTTONUP:
                 self.pressed.discard(ev.button)
             elif ev.type == pygame.JOYHATMOTION:
-                _, y = ev.value
+                x, y = ev.value
                 if y == 1:
                     self._nav(-1)
                 elif y == -1:
                     self._nav(1)
+                if x == -1:
+                    self._action("left")
+                elif x == 1:
+                    self._action("right")
             elif ev.type == pygame.KEYDOWN:
                 if ev.key in (pygame.K_UP,):
                     self._nav(-1)
                 elif ev.key in (pygame.K_DOWN,):
                     self._nav(1)
+                elif ev.key in (pygame.K_LEFT,):
+                    self._action("left")
+                elif ev.key in (pygame.K_RIGHT,):
+                    self._action("right")
                 elif ev.key in KEY_OK:
                     self._action("ok")
                 elif ev.key in KEY_BACK:
