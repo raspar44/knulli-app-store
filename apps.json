@@ -129,7 +129,7 @@
       "desc": "Cliente BitTorrent con buscador integrado. Busca torrents por nombre, ordena por seeders y",
       "desc_long": "Cliente BitTorrent con buscador integrado. Busca torrents por nombre, ordena por seeders y descarga con un boton. Acepta tambien enlaces magnet pegados a mano y archivos .torrent dejados en /userdata/Download/Torrents/_add/. Pantalla de descargas con progreso, velocidad y pausa/reanudar. El motor es aria2c, que se instala solo en el primer arranque (necesita internet). Las descargas van a /userdata/Download/Torrents/.",
       "version": "1.0",
-      "size_mb": 5.6,
+      "size_mb": 5.61,
       "genre": "Utility",
       "launcher": "Torrent.sh",
       "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/torrent.zip",
