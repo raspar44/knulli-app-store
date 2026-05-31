@@ -289,7 +289,7 @@
       "desc": "Agenda telefonica de contactos con buscador. Guarda nombre, apellidos, telefono, email per",
       "desc_long": "Agenda telefonica de contactos con buscador. Guarda nombre, apellidos, telefono, email personal y de trabajo, cumpleanos, usuarios de Telegram, Twitter/X y Steam, direccion, grupo sanguineo y notas. Cada contacto con avatar (15 disenos a elegir) o tu propia foto. Crea, edita y borra contactos (uno o varios a la vez). Datos guardados en /userdata/system/agenda.",
       "version": "1.0",
-      "size_mb": 0.03,
+      "size_mb": 0.04,
       "genre": "Utility",
       "launcher": "Agenda.sh",
       "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/agenda.zip",
