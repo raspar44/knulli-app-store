@@ -282,6 +282,26 @@
         "marquee": "./images/PortalRAP-logo.png",
         "genre": "Utility"
       }
+    },
+    {
+      "id": "agenda",
+      "name": "Agenda",
+      "desc": "Agenda telefonica de contactos con buscador. Guarda nombre, apellidos, telefono, email per",
+      "desc_long": "Agenda telefonica de contactos con buscador. Guarda nombre, apellidos, telefono, email personal y de trabajo, cumpleanos, usuarios de Telegram, Twitter/X y Steam, direccion, grupo sanguineo y notas. Cada contacto con avatar (15 disenos a elegir) o tu propia foto. Crea, edita y borra contactos (uno o varios a la vez). Datos guardados en /userdata/system/agenda.",
+      "version": "1.0",
+      "size_mb": 0.03,
+      "genre": "Utility",
+      "launcher": "Agenda.sh",
+      "url": "https://github.com/raspar44/knulli-app-store/releases/download/apps-v1/agenda.zip",
+      "icon": "https://raw.githubusercontent.com/raspar44/knulli-app-store/main/icons/agenda.png",
+      "gamelist": {
+        "path": "./Agenda.sh",
+        "name": "Agenda",
+        "desc": "Agenda telefonica de contactos con buscador. Guarda nombre, apellidos, telefono, email personal y de trabajo, cumpleanos, usuarios de Telegram, Twitter/X y Steam, direccion, grupo sanguineo y notas. Cada contacto con avatar (15 disenos a elegir) o tu propia foto. Crea, edita y borra contactos (uno o varios a la vez). Datos guardados en /userdata/system/agenda.",
+        "image": "./images/agenda-image.png",
+        "marquee": "./images/agenda-logo.png",
+        "genre": "Utility"
+      }
     }
   ]
 }
