@@ -28,7 +28,7 @@
       "name": "YouTube",
       "desc": "Busca videos en YouTube con teclado virtual, velos en streaming (360p) o descargalos en ca",
       "desc_long": "Busca videos en YouTube con teclado virtual, velos en streaming (360p) o descargalos en calidad (hasta 720p) para verlos luego. Favoritos de canales, historial, miniaturas de las descargas y control completo del video con el mando.",
-      "version": "1.1",
+      "version": "1.2",
       "size_mb": 3.03,
       "genre": "Multimedia",
       "launcher": "YouTube.sh",
