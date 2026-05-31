@@ -23,8 +23,10 @@ Hecho por **YSG** · `@ YSG 2026 @`
 | ProtonVPN | Cliente OpenVPN |
 | RGB Settings | Configura los LEDs RGB del mando |
 | Pantalla | Test y diagnóstico del LCD |
-| Disco Duro | Info de almacenamiento |
+| Disco Duro | Gestor de almacenamiento (microSD/USB), copiar/comprimir/expulsar |
 | RAMfaster | Optimización de RAM |
+| PORTAL RAP | Autenticación del portal cautivo WiFi (Aruba ClearPass) |
+| Agenda | Agenda de contactos: buscador, varios teléfonos/emails, cumpleaños, avatar o foto, PIN de acceso, idiomas (ES/EN/FR) y exportar/importar |
 | Tienda | Esta misma app (se auto-actualiza) |
 
 ---
